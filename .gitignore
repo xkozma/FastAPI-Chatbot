@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+_build/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written into a _MEIPASS folder in the "onefile" mode
+#  https://github.com/pyinstaller/pyinstaller/wiki/Recipe-Bundling-Data-Files#using-onefile
+_MEIPASS/
+_MEIPASS2/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# Documentation
+/docs

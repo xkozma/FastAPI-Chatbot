@@ -1,0 +1,113 @@
+.chatbot {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Set a fixed height for the chatbot container */
+    background-color: var(--background-color); /* Use the background color from themes.css */
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    color: var(--text-color); /* Use the text color from themes.css */
+}
+
+.message.user {
+    background-color: #007bff; /* A nice blue for user messages */
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #6c757d; /* A greyish color for bot messages */
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-right: 10px;
+    color: var(--text-color); /* Use the text color from themes.css */
+    background-color: var(--background-color); /* Use the background color from themes.css */
+}
+
+.chat-input button {
+    background-color: #28a745; /* A green color for the send button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chat-input button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the message container */
+.message-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the speaker name */
+.speaker {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+/* Align user messages to the right */
+.message-container.user {
+    align-items: flex-end;
+}
+
+/* Align assistant messages to the left */
+.message-container.bot {
+    align-items: flex-start;
+}
+
+/* Align user speaker to the right */
+.message-container.user .speaker {
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Align assistant speaker to the left */
+.message-container.bot .speaker {
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Style for the user speaker */
+.speaker.speaker-user {
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Style for the assistant speaker */
+.speaker.speaker-assistant {
+    align-self: flex-start;
+    text-align: left;
+}

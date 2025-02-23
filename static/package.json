@@ -1,0 +1,28 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "description": "A full-stack application with FastAPI backend and React frontend.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "echo 'No build step defined'",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "fullstack-app": "file:",
+    "nodemon": "^3.1.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
